@@ -1,0 +1,17 @@
+# Node modules (installed dependencies)
+node_modules/
+
+# Next.js build output
+.next/
+
+# Environment variables (DO NOT COMMIT SECRETS)
+.env.local
+.env.development
+.env.production
+
+# Firebase debug logs (if using Firebase locally)
+firebase-debug.log
+
+# OS/System files
+.DS_Store  # macOS system file
+Thumbs.db  # Windows thumbnail cache
