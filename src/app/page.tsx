@@ -1,4 +1,3 @@
-import Login_Button from "@/components/Login_Button"; 
 import Navbar from "@/components/Navbar"; 
 
 export default function Home() {
