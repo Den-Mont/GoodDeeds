@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image"; // Import Next.js Image component
 import AuthForm from "./AuthForm";
 
 const Navbar = () => {
@@ -12,7 +13,12 @@ const Navbar = () => {
   return (
     <>
       <nav className="w-full flex justify-between items-center p-4 bg-gray-900 text-white relative z-50">
-        <h1 className="text-xl font-bold">GoodDeeds</h1>
+        {/* Logo and Title */}
+        <div className="flex items-center space-x-3">
+          <Image src="/logo.png" alt="GoodDeeds Logo" width={60} height={60} />
+          <h1 className="text-xl font-bold">GoodDeeds</h1>
+        </div>
+
         <div className="flex space-x-4">
           <button
             className="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600"
