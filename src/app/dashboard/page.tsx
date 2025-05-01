@@ -1,4 +1,5 @@
 "use client";
+import type { User } from "firebase/auth";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
@@ -13,7 +14,7 @@ import { FiHome, FiClipboard, FiAward, FiUser } from "react-icons/fi";
 
 export default function Dashboard() {
   const router = useRouter();
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState<User | null>(null);
   const [userName, setUserName] = useState("");
   const [profilePic, setProfilePic] = useState("/default-avatar.png");
   const [karma, setKarma] = useState(100);
