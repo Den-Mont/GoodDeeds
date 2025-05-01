@@ -160,9 +160,9 @@ export default function Dashboard() {
                   <h3 className="text-lg font-semibold">{task.title}</h3>
                   <p className="text-sm text-gray-300">{task.details}</p>
                   <div className="mt-2 text-sm text-blue-400">
-                    {task.tags?.map((tag, i) => (
-                      <span key={i} className="mr-2">#{tag}</span>
-                    ))}
+                  {task.tags?.map((tag: string, i: number) => (
+                    <span key={i} className="mr-2">#{tag}</span>
+                  ))}
                   </div>
                 </li>
               ))}
